@@ -1,5 +1,10 @@
 from setuptools import setup, find_packages
 
+base_packages = [
+    "numpy",
+    "scipy",
+]
+
 test_packages = [
     "pytest>=5.4.3",
     "black>=19.10b0",
@@ -12,7 +17,7 @@ dev_packages = test_packages + util_packages
 
 setup(
     name="moonpy",
-    version="0.1.2",
+    version="0.2.0",
     packages=find_packages(),
     extras_require={"dev": dev_packages, "test": test_packages},
 )
